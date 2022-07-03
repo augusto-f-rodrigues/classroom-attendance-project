@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -13,22 +12,24 @@
       rel="stylesheet"
     />
     <!--  -->
-    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="stylesheet" href="/css/stylesform.css" />
+
   </head>
   <body>
     <div class="container">
       <h1 class="title">Classroom Attendance</h1>
 
       <div class="card">
-        <form action="#" method="POST">
+        <form action="/students/registerStudent" method="POST">
           <div class="form-controller">
             <span>Student name:</span>
-            <input type="text" placeholder="Name" />
+            <input type="text" name="name" id="name" placeholder="Name" />
           </div>
 
           <div class="form-controller">
             <span>Student email:</span>
-            <input type="text" placeholder="Email" />
+            <input type="email" name="email" id="email" placeholder="Email" />
           </div>
 
           <button>Submit</button>
